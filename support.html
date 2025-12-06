@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support for VinylSync - Bridge your vinyl collection with Apple Music">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>VinylSync - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+
+        .nav {
+            background: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .nav a {
+            color: #70baad;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav a:hover {
+            color: #5a9d91;
+        }
+
+        .nav a.active {
+            color: #5a9d91;
+            border-bottom: 2px solid #5a9d91;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #70baad 0%, #5a9d91 100%);
+            color: white;
+            padding: 3rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #70baad;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+
+        .feature-box {
+            background: #f8f9fa;
+            border-left: 4px solid #70baad;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background: #70baad;
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            border-bottom: 1px solid white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #70baad;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #70baad;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #70baad;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+            background: #f5f5f7;
+        }
+
+        .footer a {
+            color: #70baad;
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="support.html" class="active">Support</a>
+        <a href="privacy.html">Privacy</a>
+    </nav>
+
+    <div class="header">
+        <div class="header-content">
+            <img src="icon.png" alt="VinylSync Icon" class="app-icon">
+            <div class="header-text">
+                <h1>VinylSync Support</h1>
+                <p>We're here to help</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>About VinylSync</h2>
+        <p>VinylSync is an iOS app that bridges the gap between your vinyl record collection and Apple Music. Connect your Discogs account to sync your collection and wantlist, then easily find and add albums to your Apple Music library.</p>
+
+        <div class="feature-box">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Sync your Discogs vinyl collection</li>
+                <li>Browse and search your collection offline</li>
+                <li>Find matching albums on Apple Music</li>
+                <li>Add albums to your Apple Music library with one tap</li>
+                <li>Track collection statistics and value</li>
+                <li>Follow other users' wantlists</li>
+                <li>Barcode scanning for quick searches</li>
+            </ul>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I get started?</p>
+            <p>Download VinylSync from the App Store, then sign in with your Discogs account. The app will sync your collection and you can start exploring right away.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Do I need a Discogs account?</p>
+            <p>Yes, VinylSync requires a Discogs account to access your vinyl collection data. You can create a free account at <a href="https://www.discogs.com" target="_blank">discogs.com</a>.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Do I need Apple Music?</p>
+            <p>Apple Music is optional. You can browse and explore your Discogs collection without Apple Music. The Apple Music features (finding and adding albums) require an Apple Music subscription.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Is my data safe?</p>
+            <p>Yes! All your data is stored locally on your device. We don't have servers and don't collect your personal information. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Why isn't my collection syncing?</p>
+            <p>Try these steps:</p>
+            <ol>
+                <li>Check your internet connection</li>
+                <li>Make sure you're signed in to Discogs (Settings → Sign Out → Sign In)</li>
+                <li>Try pulling to refresh on the Home screen</li>
+                <li>Clear cache in Settings and sync again</li>
+            </ol>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I add albums to Apple Music?</p>
+            <p>Tap on any album in your collection, then tap "Find on Apple Music". Once the album is found, tap "Add to Library" to add it to your Apple Music collection.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Can I use the app offline?</p>
+            <p>Yes! Once your collection is synced, you can browse it offline. Searching Apple Music and syncing new items requires an internet connection.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I follow other users' wantlists?</p>
+            <p>Go to the Wantlist tab, tap the "+" button, and enter a Discogs username. Their wantlist will appear alongside yours.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Is VinylSync free?</p>
+            <p>Yes, VinylSync is free to use. There's an optional tip jar if you'd like to support development.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">How do I report a bug or request a feature?</p>
+            <p>Email us at <a href="mailto:vinylsync.app@gmail.com">vinylsync.app@gmail.com</a>. We appreciate all feedback and suggestions!</p>
+        </div>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li>iOS 17.0 or later</li>
+            <li>iPadOS 17.0 or later</li>
+            <li>Internet connection for syncing</li>
+            <li>Discogs account (free)</li>
+            <li>Apple Music subscription (optional, for streaming features)</li>
+        </ul>
+
+        <h2>Troubleshooting</h2>
+
+        <h3>App crashes or freezes</h3>
+        <ol>
+            <li>Make sure you're running the latest version from the App Store</li>
+            <li>Try force-quitting and reopening the app</li>
+            <li>Clear cache in Settings</li>
+            <li>Restart your device</li>
+            <li>If issues persist, contact support</li>
+        </ol>
+
+        <h3>Apple Music integration not working</h3>
+        <ol>
+            <li>Verify you have an active Apple Music subscription</li>
+            <li>Check that VinylSync has permission to access Apple Music (Settings → VinylSync → Media & Apple Music)</li>
+            <li>Sign out and sign back in to Apple Music in the iOS Settings app</li>
+        </ol>
+
+        <h3>Barcode scanner not working</h3>
+        <ol>
+            <li>Grant camera permission to VinylSync (Settings → VinylSync → Camera)</li>
+            <li>Make sure there's adequate lighting</li>
+            <li>Hold the barcode steady within the frame</li>
+        </ol>
+
+        <div class="contact-box">
+            <h2>Need More Help?</h2>
+            <p>Contact us at <a href="mailto:vinylsync.app@gmail.com">vinylsync.app@gmail.com</a></p>
+            <p style="margin-top: 1rem; font-size: 0.95rem;">We typically respond within 24-48 hours</p>
+        </div>
+
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://www.discogs.com" target="_blank">Discogs</a> - Manage your collection</li>
+            <li><a href="https://www.apple.com/apple-music/" target="_blank">Apple Music</a> - Subscribe or learn more</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 VinylSync. All rights reserved.</p>
+        <p>VinylSync is not affiliated with Discogs or Apple Inc.</p>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="mailto:vinylsync.app@gmail.com">Contact Support</a>
+        </p>
+    </div>
+</body>
+</html>
